@@ -9,6 +9,15 @@ if not vim.loop.fs_stat(lazypath) then
     lazypath,
   })
 end
+
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup("wsluser.plugins")
+require("lazy").setup({ { import = "wsluser.plugins" }, { import = "wsluser.plugins.lsp" } }, {
+  checker = {
+    enabled = true,
+    notify = false,
+  },
+  change_detection = {
+    notify = false,
+  },
+})

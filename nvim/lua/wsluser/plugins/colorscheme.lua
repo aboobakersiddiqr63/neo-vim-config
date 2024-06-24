@@ -3,7 +3,7 @@ return {
   priority = 1000,
   config = function()
     local transparent = false -- set to true if you would like to enable transparency
-
+    -- TODO
     local bg = "#08121c"          -- Even darker, warmer background color
     local bg_dark = "#060f17"     -- Even darker, warmer background color for darker sections
     local bg_highlight = "#143652"
