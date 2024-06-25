@@ -1,0 +1,23 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    "key": "ctrl+shift+k",
+    "command": "workbench.action.terminal.kill"
+  },
+  {
+    "key": "ctrl+shift+i",
+    "command": "workbench.action.terminal.newWithProfile",
+    "args": { "profileName": "Git Bash" }
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "workbench.action.terminal.newWithProfile",
+    "args": { "profileName": "Ubuntu (WSL)" }
+  },
+  {
+    "key": "ctrl+alt+down", // Change this to your preferred key combination
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  }
+]
+
